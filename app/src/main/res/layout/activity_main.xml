@@ -6,13 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/etAssunto"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Assunto:"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <EditText
+        android:id="@+id/etTexto"
+        android:layout_width="375dp"
+        android:layout_height="226dp"
+        android:ems="10"
+        android:hint="Texto"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="378dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="378dp"
+        android:layout_height="59dp"
+        android:text="Enviar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
